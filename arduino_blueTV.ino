@@ -160,7 +160,8 @@ void switchMethod(String _s) {
     return display.stopscroll();
   }
   if (method == "clearDisplay") {
-    return display.clearDisplay();
+    display.clearDisplay();
+    return display.display();
   }
   Serial.println(method);
   if (method == "drawBitmap") {
